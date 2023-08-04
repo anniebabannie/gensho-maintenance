@@ -1,0 +1,29 @@
+<%= content_for :body_class, 'analytics-about page' %>
+<%= content_for :page, 'analytics' %>
+<% if user_signed_in? && current_user.email === "anniesexton@gmail.com" %>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="section-header section-header-no-intro">
+          <h1>Analytics</h1>
+        </div><!-- end section-header -->
+      </div><!-- end col -->
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">Total Users: <%= @total_users %></div>
+          </div>
+          <div class="panel-body">
+            <p><%= @total_premium %> / <%= @goal %></p>
+            <p><%= @percent_complete %></p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" valuemax="<%= @goal %>" style="width: <%= (@total_premium/@goal)*100 %>%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

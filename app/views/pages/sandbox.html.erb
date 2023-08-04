@@ -1,0 +1,21 @@
+<%= content_for :body_class, 'sandbox-about page' %>
+<%= content_for :page, 'sandbox' %>
+<div class="container">
+  <div class="row">
+  	<% if current_user.email === "anniesexton@gmail.com" %>
+	  	<h3>My Articles</h3>
+			<ul>
+				<% @articles.each do |article| %>
+					<li><%= article.title %></li>
+				<% end %>
+			</ul>
+			
+			<h3>My Words</h3>
+			<ul>
+				<% @words.each do |word| %>
+					<li><%= word.text %></li>
+				<% end %>
+			</ul>
+  	<% end %>
+  </div>
+</div>

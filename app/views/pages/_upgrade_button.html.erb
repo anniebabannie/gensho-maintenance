@@ -1,0 +1,10 @@
+<% if user_signed_in? and !current_user.is_premium and current_user.trial_used %>
+  <button class="btn btn-primary btn-upgrade" data-toggle="modal" data-target="#upgrade-modal">Upgrade to Premium for $1.99/mo</button><br/>
+  <a href="/articles" class="upgrade-no-thanks gray-link">No, thanks – maybe later!</a>
+<% elsif user_signed_in? and !current_user.trial_used %>
+  <a href="/start-trial" class="btn btn-primary btn-upgrade">Start my 14-day free trial</a><br/>
+  <a href="/articles" class="upgrade-no-thanks gray-link">No, thanks – maybe later!</a>
+<% elsif !user_signed_in? %>
+	<button class="btn btn-primary btn-header" data-toggle="modal" data-target="#signup-modal">Start my 14-day free trial</button><br/>
+  <%= render 'layouts/signup_modal' %>
+<% end %>

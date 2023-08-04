@@ -1,0 +1,12 @@
+<nav class="border-b border-gray-200">
+  <div class="py-6 px-6 max-w-[1200px] mx-auto my-0 flex justify-between">
+      <a href="/" class="logo"><%= image_tag('logo.png', width: "170") %></a>
+      <ul class="text-sm flex gap-4">
+        <%= link_to 'Pricing', '/#home-section-pricing' %>
+        <%= link_to 'About', '/about' %>
+        <%= link_to 'Blog', '/blog' %>
+        <%= link_to "Login", "login", class: "btn btn-secondary" %>
+        <%= link_to "Sign up", "signup", class: "btn btn-primary" %>
+      </ul>
+  </div>
+</nav>
