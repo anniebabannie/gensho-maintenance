@@ -2,12 +2,162 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
+@layer base {
+  * {
+    font-family: 'Lato', sans-serif;
+  }
 
-@layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
+  h1, h2, h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    @apply text-gray-600;
+  }
+
+  h1 {
+    @apply text-4xl leading-snug;
+  }
+
+  h2 {
+    @apply text-3xl;
+  }
+
+  h3 {
+    @apply text-2xl;
+  }
+
+  p {
+    @apply text-lg text-gray-500;
   }
 }
 
-*/
+@layer components {
+  .btn {
+    @apply py-2 px-8 text-lg rounded;
+  }
+  .btn-sm {
+    @apply py-1.5 px-5 rounded;
+  }
+  .btn-primary {
+    @apply bg-rose-400 text-white border-b-rose-800 border-0 border-b hover:bg-rose-500 transition-colors duration-75;
+  }
+  .btn-secondary {
+    @apply border border-gray-200 hover:border-gray-400 text-gray-500 hover:text-gray-900;
+  }
+}
+
+@layer utilities {
+  .row {
+    @apply px-6;
+  }
+}
+
+ul.flags {
+  font-style: italic;
+  font-size: 13px;
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+ul.flags li {
+  display: inline-block;
+  padding: 0 25px;
+}
+
+ul.flags li:before {
+  content: "";
+  height: 37px;
+  width: 59px;
+  display: block;
+  margin: 0 auto;
+  background-image: url(/assets/flags.png);
+  background-size: 501px;
+}
+
+.japanese:before {
+  background-position: -110px 0px;
+}
+.french:before {
+  background-position: -221px 0px;
+}
+.german:before {
+  background-position: -331px 0px;
+}
+.italian:before {
+  background-position: -441px 0px;
+}
+
+.flashcard-icons {
+  text-align: center;
+}
+
+.flashcard-icons li {
+    height: 70px;
+    background-image: url(/assets/flashcard-programs.png);
+    background-size: 1051px;
+    margin-right: 40px;
+    width: 245px;
+}
+
+.flashcard-icons li.flashcards-icons-quizlet {
+  width: 193px;
+  background-position: 0px -1px;
+}
+.flashcard-icons li.flashcards-icons-cram {
+  width: 199px;
+  background-position: -261px -2px;
+}
+.flashcard-icons li.flashcards-icons-anki {
+  width: 233px;
+  background-position: -545px -1px;
+}
+.flashcard-icons li.flashcards-icons-memrise {
+  width: 210px;
+  background-position: -841px 0px;
+}
+
+.nomad-text {
+  position: relative;
+  padding: 45px 0;
+}
+
+.nomad-text::after {
+  content: "";
+  display: block;
+  height: 467px;
+  width: 844px;
+  background-image: url(/assets/world-map.png);
+  background-size: 844px;
+  position: absolute;
+  right: -15%;
+  top: -35%;
+}
+
+.language-flipper {
+  position: relative;
+  display: inline-block;
+  width: 136px;
+  height: 35px;
+  top: 6px;
+  overflow: hidden;
+}
+
+
+.language-flipper strong {
+  font-family: 'Roboto Slab', sans-serif;
+  display: block;
+  text-align: center;
+}
+
+@keyframes ticker {
+  0% { top: 0px; } 
+  20% { top: -36px; } 
+  40% { top: -73px; } 
+  60% { top: -108px; } 
+  80% { top: -144px; } 
+  100% { top: 0px; } 
+}
+
+.language-flipper .lang-wrapper {
+  position: relative;
+  animation: ticker 6s cubic-bezier(1, 0, 0.5, 0) infinite;
+}

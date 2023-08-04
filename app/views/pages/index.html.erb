@@ -1,212 +1,170 @@
 <%= content_for :body_class, 'page-home page' %>
 <%= content_for :page, 'home' %>
-<%= render 'layouts/mobile_header' %>
-<div id="home-section-hero" class="section section-teal section-hero">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-sm-7">
-        <h1>Look up words by highlighting<br> the ones you don’t know.</h1>
-        <p class="intro">Translate anything and build your vocabulary from <em>real content</em>.<br>Five langauges. One simple price. <strong>Just $1.99 / month.</strong></p>
-        <button class="btn btn-primary btn-header bottom15" data-toggle="modal" data-target="#signup-modal">Free 14-Day Trial <i class="icon-angle-right"></i></button><br/>
-        <small class="med-gray"><strong>No credit card required</strong> for sign up. <i class="icon-smile"></i></small>
-        <%= render 'layouts/signup_modal' %>
+<div class="bg-gradient-to-b from-[#d8eae9] to-[#eff8f8]">
+  <div class="max-w-[1200px] mx-auto py-16">
+    <div class="row grid grid-cols-12 gap-6 items-center">
+      <div class="col-span-6 flex flex-col gap-6 items-start">
+        <h1 class="text-gray-700">Learn vocabulary by highlighting the words you don’t know.</h1>
+        <p class="text-gray-500 text-lg">Gensho is the best way to build your foreign language vocabulary. Translate anything and build your vocabulary from <em>real content</em>.<br>Five langauges. One simple price. <strong>Now FREE.</strong></p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#signup-modal">Sign Up<i class="icon-angle-right"></i></button><br/>
+        <%# <%= render 'layouts/signup_modal' %>
       </div><!-- end col-sm-7 -->
-      <div class="col-sm-5">
+      <div class="col-span-4 col-start-8">
         <%= image_tag "top-example.png", width: 369 %>
       </div>
     </div>
   </div>
 </div>
 
-<div id="home-section-how-it-works">
-  <div class="container">
-    <div class="row">
-      <div class="section-header">
-        <h2>How it Works</h2>
-        <p class="intro">Gensho is the ultimate reading comprehension tool for foreign language-learners.</p>
-        <ul class="flags top30">
-          <li class="spanish">Spanish</li>
-          <li class="japanese">Japanese</li>
-          <li class="french">French</li>
-          <li class="german">German</li>
-          <li class="italian">Italian</li>
-        </ul>
-      </div><!-- end section-header -->
-    </div><!-- end row -->
-  </div>
-  <div class="how-it-works-steps">
-    <div class="step section section-tan1">
-      <div class="container">
-        <div class="row vcenter">
-          <div class="col-sm-7 step-screenshot screenshot-1">
-            <div class="wrapper">
-              <%= video_tag "https://s3.amazonaws.com/gensho/copy-news.mp4", size: "654x421", autoplay: true, muted: true, loop: true %>
-            </div>
-          </div>  
-          <div class="col-sm-5 pleft45">
-            <div class="white-card step-card step-card-1">
-              <div>
-                <h4>Step 1</h4>
-                <h3>Grab some text.</h3>
-                <p>Any digital text will do – news articles, tweets, song lyrics; you name it – in Spanish, Japanese, French, German or Italian.</p>
-              </div>
-            </div>
-          </div>  
-        </div>
-      </div>
-    </div><!-- end step 1 -->
-    <div class="step section section-tan1-dark">
-      <div class="container">
-        <div class="row vcenter">
-          <div class="col-sm-7 step-screenshot screenshot-2">
-            <div class="wrapper">
-              <%= video_tag "https://s3.amazonaws.com/gensho/paste.mp4", size: "654x421", autoplay: true, muted: true, loop: true %>
-            </div>
-          </div>  
-          <div class="col-sm-5 pleft45">
-            <div class="white-card step-card step-card-2">
-              <div>
-                <h4>Step 2</h4>
-                <h3>Paste it into Gensho.</h3>
-                <p>Copy and paste the text into Gensho as a new article. You can save these articles to study later or read them immediately.</p>
-              </div>
-            </div>
-          </div>  
-        </div>
-      </div>
-    </div><!-- end step 2 -->
-    <div class="step section section-tan1">
-      <div class="container">
-        <div class="row vcenter">
-          <div class="col-sm-7 step-screenshot screenshot-3">
-            <div class="wrapper">
-              <%= video_tag "https://s3.amazonaws.com/gensho/highlight-words.mp4", size: "654x421", autoplay: true, muted: true, loop: true %>
-            </div>
-          </div>  
-          <div class="col-sm-5 pleft45">
-            <div class="white-card step-card step-card-3">
-              <div>
-                <h4>Step 3</h4>
-                <h3>Highlight the words<br>you don't know.</h3>
-                <p>Gensho will look them up as you read and save them for you to study later.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- end step 3 -->
-    <div class="step section section-tan1-dark">
-      <div class="container">
-        <div class="row vcenter">
-          <div class="col-sm-7 step-screenshot screenshot-4">
-            <div class="wrapper">
-              <%= video_tag "https://s3.amazonaws.com/gensho/study-flashcards.mp4", size: "654x421", autoplay: true, muted: true, loop: true %>
-            </div>
-          </div>
-          <div class="col-sm-5 pleft45">
-            <div class="white-card step-card step-card-4">
-              <div>
-                <h4>Step 4</h4>
-                <h3>Instantly review.</h3>
-                <p>Use the built-in flashcards that Gensho provides <em>or</em> download your words to use in your favorite flashcard program.</p>
-              </div>
-            </div>
-          </div>  
-        </div>
-      </div>
-    </div><!-- end step 4 -->
-  </div><!-- end how-it-works-steps -->
-</div><!-- home-section-how-it-works -->
+<div class="max-w-[1200px] mx-auto py-16">
+  <div class="row">
+    <div class="flex flex-col gap-6 items-center">
+      <h2>How it Works</h2>
+      <p class="intro">Gensho is the ultimate reading comprehension tool for foreign language-learners.</p>
+      <ul class="flags top30">
+        <li class="spanish">Spanish</li>
+        <li class="japanese">Japanese</li>
+        <li class="french">French</li>
+        <li class="german">German</li>
+        <li class="italian">Italian</li>
+      </ul>
+    </div><!-- end section-header -->
+  </div><!-- end row -->
+</div>
 
-<div id="home-section-languages-textbooks" class="section section-dark">
-  <div class="container">
-    <div class="row">
-      <div class="section-header">
-        <div class="col-sm-10 col-sm-offset-1">
-          <div><i class="icon-book-2"></i></div>
-          <h2>Because languages don't live in textbooks.</h2>
-        </div>
-        <div class="col-sm-6 col-sm-offset-3">
-          <p class="intro">By using real-life content, you can build your vocabulary from subjects that are relavent to your interests and your life.</p>
-        </div>
-      </div><!-- end section-header -->
+<div class="bg-tan-1">
+  <div class="max-w-[1200px] mx-auto py-20">
+    <div class="row grid grid-cols-2 gap-x-16 items-center">
+      <div class="border-4 border-gray-600 rounded">
+        <%= video_tag "https://s3.amazonaws.com/gensho/copy-news.mp4", size: "654x421", autoplay: true, muted: true, loop: true %>
+      </div>
+      <div class="bg-white p-8 rounded shadow-sm shadow-gray-400 grid gap-4">
+        <h4 class="uppercase text-lime-600 font-bold">Step 1</h4>
+        <hr class="w-[15px] bg-gray-400 h-0.5"/>
+        <h3>Grab some text.</h3>
+        <p>Any digital text will do – news articles, tweets, song lyrics; you name it – in Spanish, Japanese, French, German or Italian.</p>
+      </div> 
+    </div>
+  </div>
+</div><!-- end step 1 -->
+<div class="bg-tan-2">
+  <div class="max-w-[1200px] mx-auto py-20">
+    <div class="row grid grid-cols-2 gap-x-16 items-center">
+      <div class="border-4 border-gray-600 rounded">
+        <%= video_tag "https://s3.amazonaws.com/gensho/paste.mp4", size: "654x421", autoplay: true, muted: true, loop: true %>
+      </div>
+      <div class="bg-white p-8 rounded shadow-sm shadow-gray-400 grid gap-4">
+        <h4 class="uppercase text-lime-600 font-bold">Step 2</h4>
+        <hr class="w-[15px] bg-gray-400 h-0.5"/>
+          <h3>Paste it into Gensho.</h3>
+          <p>Copy and paste the text into Gensho as a new article. You can save these articles to study later or read them immediately.</p>
+      </div>
+    </div>
+  </div>
+</div><!-- end step 2 -->
+<div class="bg-tan-1">
+  <div class="max-w-[1200px] mx-auto py-20">
+    <div class="row grid grid-cols-2 gap-x-16 items-center">
+      <div class="border-4 border-gray-600 rounded">
+        <%= video_tag "https://s3.amazonaws.com/gensho/highlight-words.mp4", size: "654x421", autoplay: true, muted: true, loop: true %>
+      </div>
+      <div class="bg-white p-8 rounded shadow-sm shadow-gray-400 grid gap-4">
+        <h4 class="uppercase text-lime-600 font-bold">Step 3</h4>
+        <hr class="w-[15px] bg-gray-400 h-0.5"/>
+        <h3>Highlight the words<br>you don't know.</h3>
+        <p>Gensho will look them up as you read and save them for you to study later.</p>
+      </div> 
+    </div>
+  </div>
+</div><!-- end step 3 -->
+<div class="bg-tan-2">
+  <div class="max-w-[1200px] mx-auto py-20">
+    <div class="row grid grid-cols-2 gap-x-16 items-center">
+      <div class="border-4 border-gray-600 rounded">
+        <%= video_tag "https://s3.amazonaws.com/gensho/study-flashcards.mp4", size: "654x421", autoplay: true, muted: true, loop: true %>
+      </div>
+      <div class="bg-white p-8 rounded shadow-sm shadow-gray-400 grid gap-4">
+        <h4 class="uppercase text-lime-600 font-bold">Step 4</h4>
+        <hr class="w-[15px] bg-gray-400 h-0.5"/>
+        <h3>Instantly review.</h3>
+        <p>Use the built-in flashcards that Gensho provides <em>or</em> download your words to use in your favorite flashcard program.</p>
+      </div> 
+    </div>
+  </div>
+</div><!-- end step 4 -->
+
+<div class="bg-gradient-to-b from-[#5a9b92] to-[#65b3ac]">
+  <div class="max-w-[600px] mx-auto py-20">
+    <div class="row flex flex-col gap-7 items-center text-center">
+      <div><i class="icon-book-2"></i></div>
+      <h2 class="text-white">Because languages don't live in textbooks.</h2>
+      <p class="text-gray-200 align-center">By using real-life content, you can build your vocabulary from subjects that are relavent to your interests and your life.</p>
     </div>
   </div>
 </div>
 
-<div id="home-section-flashcards" class="section">
-  <div class="container">
+<div class="bg-white py-20">
+  <div class="max-w-[600px] mx-auto">
+    <div class="row flex flex-col gap-10 justify-center text-center">
+      <h2>Want to use a different flashcard program? No&nbsp;problem.</h2>
+      <p>You can download the words you've highlighted and import them into your favorite app, such as Anki or Memrise.</p>
+    </div>
+  </div>
+  <div class="max-w-[1200px] mx-auto my-16">
     <div class="row">
-      <div class="section-header clearfix">
-        <div class="col-lg-10 col-lg-offset-1">
-          <h2>Want to use a different flashcard program? No&nbsp;problem.</h2>
-          <p class="intro">You can download the words you've highlighted and import them into your favorite app, such as Anki or Memrise.</p>
-        </div>
-      </div>
-    </div><!-- end row -->
-    <div class="row">
-      <ul class="flashcard-icons inline-list">
-        <div class="col-lg-3 col-md-3 col-sm-6 centered">
+        <ul class="flashcard-icons my-4 flex justify-evenly">
           <li class="flashcard-icon flashcards-icons-quizlet"></li>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 centered">
           <li class="flashcard-icon flashcards-icons-cram"></li>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 centered">
           <li class="flashcard-icon flashcards-icons-anki"></li>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 centered">
           <li class="flashcard-icon flashcards-icons-memrise"></li>
-        </div>
       </ul>
     </div>
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
-        <p class="intro centered top60"><strong>Seriously – <em>any</em> flashcard app will work. </strong>Use whichever one you like.<br>Gensho gives you a universally supported file format (<code>.csv</code>) that all of them support.</p>
+  </div>
+  <div class="max-w-[600px] mx-auto">
+    <div class="row flex flex-col gap-10 justify-center text-center">
+      <p><strong>Seriously – <em>any</em> flashcard app will work. </strong>Use whichever one you like.<br>Gensho gives you a universally supported file format (<code class="bg-rose-50 text-rose-800 px-0.5 text-sm rounded-sm">.csv</code>) that all of them support.</p>
+    </div>
+  </div>
+</div>
+
+<div class="bg-tan-1 py-20">
+  <div class="px-6 flex flex-col gap-10 items-center">
+    <h2>Five languages. Now completely free.</h2>
+    <p class="intro">Gensho can look up the English definitions of words from any of the following languages.</p>
+    <ul class="flags top30">
+      <li class="spanish">Spanish</li>
+      <li class="japanese">Japanese</li>
+      <li class="french">French</li>
+      <li class="german">German</li>
+      <li class="italian">Italian</li>
+    </ul>
+    <button class="btn btn-primary" data-toggle="modal" data-target="#signup-modal">Sign Up<i class="icon-angle-right"></i></button><br/>
+  </div>
+</div>
+
+<!-- <div class="py-20">
+    <div class="px-6 flex flex-col gap-10 items-center">
+      <h2>Built by a digital nomad and language nerd.</h2>
+      <p>Annie Sexton, the founder of Gensho, is a web developer, designer, writer, and full-time traveler. She believes that language, above all else, is the key to connecting with cultures.</p>
+    </div>
+  </div>
+</div> -->
+
+<div class="py-20 overflow-hidden">
+  <div class="nomad-text max-w-[1200px] mx-auto ">
+    <div class="px-6 flex items-center gap-10">
+      <%= image_tag "annie1.jpg", width: 200, class: "rounded-full" %>
+      <div class="flex flex-col gap-8">
+        <h2>Built by a travel-loving language nerd.</h2>
+        <p class="intro">Annie Sexton, the founder of Gensho, is a web developer, designer, writer, and ex-digital nomad. She believes that language, above all else, is the key to connecting with cultures.</p>
       </div>
     </div>
   </div>
 </div>
 
-<div id="home-section-pricing" class="section section-tan1 centered">
-  <div class="container">
-    <div class="row">
-      <div class="section-header">
-        <h2>Five languages. One easy subscription.</h2>
-        <p class="intro">Gensho can look up the English definitions of words from any of the following languages.</p>
-      </div><!-- end section-header -->
-      <div class="col-sm-6 col-sm-offset-3">
-        <div class="white-card pricing-box">
-          <%= image_tag "flags-small.png", width: 376, class: "flags-small" %>
-          <hr class="gray-line"/>
-          <div class="the-price top30">
-            <span class="dollar">$</span>
-            <span class="amount">1.99</span>
-            <span class="per">/ month</span>
-          </div>
-          <div class="bottom30"><small><strong>No credit card required</strong> to sign up. <i class="icon-smile"></i></small></div>
-        </div>
-        <button class="btn btn-primary top45" data-toggle="modal" data-target="#signup-modal">Free 14-Day Trial <i class="icon-angle-right"></i></button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="home-section-nomad" class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-7 col-sm-offset-4 nomad-text">
-        <h2>Built by a digital nomad and language nerd.</h2>
-        <p class="intro">Annie Sexton, the founder of Gensho, is a web developer, designer, writer, and full-time traveler. She believes that language, above all else, is the key to connecting with cultures.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="home-section-improve" class="section section-teal">
-  <div class="container">
-    <div class="row centered">
+<div class="bg-gradient-to-b from-[#d8eae9] to-[#eff8f8]">
+  <div class="max-w-[1200px] mx-auto py-16">
+    <div class="row flex flex-col gap-10 items-center">
       <h2>Improve your
         <div class="language-flipper">
           <div class="lang-wrapper">
@@ -217,8 +175,7 @@
             <strong>Italian</strong>
           </div>
         </div> today.</h2>
-      <button class="btn btn-primary btn-header bottom15" data-toggle="modal" data-target="#signup-modal">Free 14-Day Trial <i class="icon-angle-right"></i></button><br>
-      <small class="med-gray"><strong>No credit card required</strong> for sign up. <i class="icon-smile"></i></small>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#signup-modal">Sign Up<i class="icon-angle-right"></i></button>
     </div>
   </div>
 </div>
